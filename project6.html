@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Access | JS Validation</title>
+    <link rel="stylesheet" href="project6.css">
+</head>
+<body>
+
+    <div class="auth-card">
+        <h2>Identity Verification</h2>
+        <form id="authForm">
+            <div class="field">
+                <label>Access Key (Username)</label>
+                <input type="text" id="username">
+                <small class="error-msg" id="userError"></small>
+            </div>
+
+            <div class="field">
+                <label>Security Phrase (Password)</label>
+                <input type="password" id="password">
+                <small class="error-msg" id="passError"></small>
+            </div>
+
+            <button type="submit">Authorize</button>
+        </form>
+    </div>
+
+    <script src="project6.js"></script>
+</body>
+</html>

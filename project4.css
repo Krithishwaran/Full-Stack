@@ -1,0 +1,52 @@
+/* Theme Variables */
+:root {
+    --bg: #0f172a;
+    --panel-bg: #1e293b;
+    --text: #f8fafc;
+    --danger: #ef4444;
+    --success: #22c55e;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Panel Styling with Transition */
+.panel {
+    background: var(--panel-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid var(--success);
+    transition: all 0.4s ease; /* Smoothly animate changes */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Visibility Control via CSS Class */
+.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none; /* Prevents clicking when invisible */
+}
+
+/* Status Indicators */
+#status-text {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.critical {
+    color: var(--danger);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

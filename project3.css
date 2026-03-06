@@ -1,0 +1,89 @@
+/* 1. ROOT VARIABLES & FONTS */
+:root {
+    --bg-dark: #0b0e14;
+    --card-bg: #161b22;
+    --accent: #00ff9d; /* Hacker Green */
+    --text-main: #e6edf3;
+    --font-stack: 'JetBrains Mono', monospace;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-stack);
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. NAVIGATION & POSITIONING */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--card-bg);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.logo span { color: var(--accent); }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+/* 3. GRID LAYOUT */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: wide and narrow */
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+}
+
+/* 4. COMPONENT STYLING */
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.progress-bar {
+    background: #30363d;
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progress-fill {
+    background: var(--accent);
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* 5. RESPONSIVE ELEMENTS (Media Queries) */
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

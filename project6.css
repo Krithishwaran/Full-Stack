@@ -1,0 +1,37 @@
+body {
+    background: #0b0e14;
+    color: #e6edf3;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-card {
+    background: #161b22;
+    padding: 30px;
+    border-radius: 8px;
+    width: 320px;
+    border: 1px solid #30363d;
+}
+
+.field { margin-bottom: 20px; position: relative; }
+
+input {
+    width: 100%;
+    padding: 10px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: white;
+    box-sizing: border-box;
+}
+
+.error-msg {
+    color: #ff7b72;
+    font-size: 0.75rem;
+    display: none; /* Hidden by default */
+    margin-top: 5px;
+}
+
+.input-error { border-color: #f85149; }

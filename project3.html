@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStats | Performance Dashboard</title>
+    <link rel="stylesheet" href="project3.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">TECH<span>STATS</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard-grid">
+        <section class="card gpu-status">
+            <h2>GPU Status</h2>
+            <div class="stat-value">RTX 2050</div>
+            <p>Load: 45% | Temp: 65°C</p>
+        </section>
+
+        <section class="card cpu-status">
+            <h2>CPU Load</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+            <p>Ryzen 5 7535HS</p>
+        </section>
+
+        <aside class="card network-info">
+            <h2>Network</h2>
+            <ul>
+                <li>Ping: 12ms</li>
+                <li>DL: 150 Mbps</li>
+                <li>UL: 50 Mbps</li>
+            </ul>
+        </aside>
+    </main>
+
+</body>
+</html>

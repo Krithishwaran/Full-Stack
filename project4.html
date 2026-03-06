@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DOM Manipulation</title>
+    <link rel="stylesheet" href="project4.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="main-title">System Status: <span id="status-text">OFFLINE</span></h1>
+        
+        <div id="data-panel" class="panel hidden">
+            <p>GPU: RTX 2050 | Temp: <span id="temp-val">40</span>°C</p>
+        </div>
+
+        <div class="controls">
+            <button onclick="toggleSystem()">Toggle Power</button>
+            <button onclick="increaseTemp()">Stress Test</button>
+            <button onclick="resetStyle()">Reset UI</button>
+        </div>
+    </div>
+
+    <script src="project4.js"></script>
+</body>
+</html>
